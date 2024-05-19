@@ -1,6 +1,8 @@
 import { HardhatUserConfig, vars } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
 
+require("./tasks/STLBalance");
+
 const RPC_API_KEY = vars.get("RPC_API_KEY", "");
 
 const HR_TEAM_PRIVATE_KEY = vars.get(

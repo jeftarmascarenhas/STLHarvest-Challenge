@@ -1,5 +1,7 @@
-import { HardhatUserConfig, vars } from "hardhat/config";
+import { HardhatUserConfig } from "hardhat/config";
 import "@nomicfoundation/hardhat-toolbox";
+
+require("./tasks/STLBalance");
 
 const config: HardhatUserConfig = {
   solidity: {
