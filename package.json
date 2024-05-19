@@ -30,6 +30,8 @@
     "chain": "npx hardhat node",
     "compile": "npx hardhat compile",
     "clean": "npx hardhat clean",
+    "start:dev": "npx hardhat --config hardhat.config.local.ts node",
+    "deploy:dev": "hardhat ignition deploy ./ignition/modules/STLHarvestPool.ts --config hardhat.config.local.ts --network localhost",
     "test": "REPORT_GAS=true npx hardhat test",
     "test:watch": "nodemon -x npx hardhat test -w contracts -w test -e js,ts,sol"
   }
