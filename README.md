@@ -23,7 +23,7 @@ docker build . -t hrteam
 docker run hrteam
 ```
 
-## Custom Tasks
+## Custom Scripts
 
 ```shell
 npm run test:watch
@@ -34,7 +34,14 @@ npm run clean
 npm run clean
 ```
 
-## Tasks
+## Custom Tasks
+
+```shell
+npx hardhat balance --choose-network localhost --network localhost
+ npx hardhat balance --choose-network sepolia --network sepolia
+```
+
+## Hardhat Tasks
 
 ```shell
 npx hardhat help
