@@ -30,8 +30,8 @@ contract STL is ERC20, Ownable {
         airDropPaused = true;
     }
 
-    function burn(address account, uint256 value) external {
-        _burn(account, value);
+    function burn(uint256 value) external {
+        _burn(_msgSender(), value);
     }
 
     function airDropValidate(address receipt) internal view {
